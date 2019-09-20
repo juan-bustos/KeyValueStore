@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyValueStore", "KeyValueStore.csproj", "{323C1AED-D935-4ADC-A0F4-C8E8FC423D53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyValueStore", "KeyValueStore.csproj", "{323C1AED-D935-4ADC-A0F4-C8E8FC423D53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericCollections", "..\GenericCollections\GenericCollections.csproj", "{6C229945-F4E3-46E9-8E9D-8279B5E1EFF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{323C1AED-D935-4ADC-A0F4-C8E8FC423D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{323C1AED-D935-4ADC-A0F4-C8E8FC423D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{323C1AED-D935-4ADC-A0F4-C8E8FC423D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C229945-F4E3-46E9-8E9D-8279B5E1EFF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C229945-F4E3-46E9-8E9D-8279B5E1EFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C229945-F4E3-46E9-8E9D-8279B5E1EFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C229945-F4E3-46E9-8E9D-8279B5E1EFF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

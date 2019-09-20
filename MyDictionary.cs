@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace KeyValueStore
 {
-    class MyDictionary
+    public class MyDictionary<TValue>
     {
-        KeyValue[] keyValueArr = new KeyValue[10];
+        KeyValue<TValue>[] keyValueArr = new KeyValue<TValue>[100];
         private int storedValues;
 
-        public object this[string key]
+        public TValue this[string key]
         {
             get
             {
@@ -26,12 +24,12 @@ namespace KeyValueStore
                 {
                     if (keyValueArr[i].key == key)
                     {
-                        keyValueArr[i] = new KeyValue(key, value);
+                        keyValueArr[i] = new KeyValue<TValue>(key, value);
                         return;
                     }
                     if (keyValueArr[i].key == null)
                     {
-                        keyValueArr[i] = new KeyValue(key, value);
+                        keyValueArr[i] = new KeyValue<TValue>(key, value);
                         storedValues++;
                         return;
                     }

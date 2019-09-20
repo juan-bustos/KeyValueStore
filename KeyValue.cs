@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace KeyValueStore
+﻿namespace KeyValueStore
 {
-    public struct KeyValue
+    public struct KeyValue<TValue>
     {
         public readonly string key;
-        public readonly object value;
-        public KeyValue(string setKey, object setValue)
+
+        public TValue value { get; }
+        public KeyValue(string setKey, TValue setValue)
         {
             key = setKey;
             value = setValue;
